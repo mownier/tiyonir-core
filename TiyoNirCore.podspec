@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage = 'https://github.com/mownier/tiyonir-core'
   s.author   = { 'Mounir Ybanez' => 'rinuom91@gmail.com' }
-  s.source   = { :git => 'https://github.com/mownier/tiyonir-core', :tag => s.version.to_s }
+  s.source   = { :git => 'https://github.com/mownier/tiyonir-core.git', :tag => s.version.to_s }
   s.source_files = 'TiyoNirCore/Source/*.swift'
   s.requires_arc = true
 end
