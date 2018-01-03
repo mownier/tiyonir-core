@@ -25,6 +25,11 @@ public class PresentWaypointSource: PresentWaypoint, EntryWaypoint, ExitWaypoint
     var completionEntry: (() -> Void)?
     var completionExit: (() -> Void)?
     
+    public init() {
+        self.isEntryAnimated = true
+        self.isExitAnimated = true
+    }
+    
     public func enter(from parent: UIViewController) -> Bool {
         guard let scene = scene else {
             return false

@@ -18,8 +18,13 @@ public protocol PushWaypoint: class {
 public class PushWaypointSource: PushWaypoint, EntryWaypoint, ExitWaypoint {
     
     weak var scene: UIViewController?
-    var isEntryAnimated: Bool = true
-    var isExitAnimated: Bool = true
+    var isEntryAnimated: Bool
+    var isExitAnimated: Bool
+    
+    public init() {
+        self.isEntryAnimated = true
+        self.isExitAnimated = true
+    }
     
     public func enter(from parent: UIViewController) -> Bool {
         guard let scene = scene, !(scene is UINavigationController),

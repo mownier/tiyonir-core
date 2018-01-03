@@ -15,6 +15,9 @@ public protocol TableViewInjectable: class {
 
 public class TableViewInjector {
     
+    public init() {
+    }
+    
     func injectTableView(_ tableView: UITableView, using injectable: TableViewInjectable) {
         injectable.injectTableView(tableView)
     }

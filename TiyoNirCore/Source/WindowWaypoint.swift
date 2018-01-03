@@ -19,6 +19,9 @@ public class WindowWaypointSource: WindowWaypoint, RootWaypoint {
     weak var scene: UIViewController?
     var window: UIWindow!
     
+    public init() {
+    }
+    
     public func makeRoot() -> Bool {
         guard scene != nil, window != nil, window.isKeyWindow else {
             return false
