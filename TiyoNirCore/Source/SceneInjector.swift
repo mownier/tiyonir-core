@@ -18,7 +18,7 @@ public class SceneInjector {
     public init() {
     }
     
-    func injectScene(_ scene: UIViewController, using injector: SceneInjectable) {
+    public func injectScene(_ scene: UIViewController, using injector: SceneInjectable) {
         injector.injectScene(scene)
     }
 }
