@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'TiyoNir/Core'
+  s.name     = 'TNCore'
   s.version  = '0.1'
   s.summary  = 'Core for Tiyo Nir architecture'
   s.platform = :ios, '11.0'
