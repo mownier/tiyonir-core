@@ -76,6 +76,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		488B137F1FFE6193001ADE46 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				48CE646F1FFD180D004ABE75 /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		488B13801FFE619B001ADE46 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				48CE646C1FFD17D3004ABE75 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		488B13811FFE61AD001ADE46 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				48CE64711FFD1849004ABE75 /* NavigationControllerFactory.swift */,
+				48CE64731FFD1868004ABE75 /* NavigationControllerTheme.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		488B13821FFE61C1001ADE46 /* Waypoint */ = {
+			isa = PBXGroup;
+			children = (
+				48CE64851FFD1E6B004ABE75 /* PresentWaypoint.swift */,
+				48CE64831FFD1D57004ABE75 /* PushWaypoint.swift */,
+				48CE647F1FFD1C5F004ABE75 /* Waypoint.swift */,
+				48CE64811FFD1C86004ABE75 /* WindowWaypoint.swift */,
+			);
+			path = Waypoint;
+			sourceTree = "<group>";
+		};
+		488B13831FFE61D8001ADE46 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				48CE64751FFD1B19004ABE75 /* SceneFactory.swift */,
+				48CE64771FFD1B3F004ABE75 /* SceneInjector.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		488B13841FFE61F1001ADE46 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				48CE64791FFD1B84004ABE75 /* TableCellFactory.swift */,
+				48CE647B1FFD1BC4004ABE75 /* TableCellLaborer.swift */,
+				48CE647D1FFD1C21004ABE75 /* TableViewInjector.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		48CE64481FFD170E004ABE75 = {
 			isa = PBXGroup;
 			children = (
@@ -116,19 +171,12 @@
 		48CE646E1FFD17DC004ABE75 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				48CE646F1FFD180D004ABE75 /* Error.swift */,
-				48CE64711FFD1849004ABE75 /* NavigationControllerFactory.swift */,
-				48CE64731FFD1868004ABE75 /* NavigationControllerTheme.swift */,
-				48CE64851FFD1E6B004ABE75 /* PresentWaypoint.swift */,
-				48CE64831FFD1D57004ABE75 /* PushWaypoint.swift */,
-				48CE646C1FFD17D3004ABE75 /* Result.swift */,
-				48CE64751FFD1B19004ABE75 /* SceneFactory.swift */,
-				48CE64771FFD1B3F004ABE75 /* SceneInjector.swift */,
-				48CE64791FFD1B84004ABE75 /* TableCellFactory.swift */,
-				48CE647B1FFD1BC4004ABE75 /* TableCellLaborer.swift */,
-				48CE647D1FFD1C21004ABE75 /* TableViewInjector.swift */,
-				48CE647F1FFD1C5F004ABE75 /* Waypoint.swift */,
-				48CE64811FFD1C86004ABE75 /* WindowWaypoint.swift */,
+				488B137F1FFE6193001ADE46 /* Error */,
+				488B13811FFE61AD001ADE46 /* NavigationController */,
+				488B13801FFE619B001ADE46 /* Result */,
+				488B13831FFE61D8001ADE46 /* Scene */,
+				488B13841FFE61F1001ADE46 /* TableView */,
+				488B13821FFE61C1001ADE46 /* Waypoint */,
 			);
 			path = Source;
 			sourceTree = "<group>";
