@@ -17,17 +17,17 @@ public protocol WindowWaypoint: class {
 public class WindowWaypointSource: WindowWaypoint, RootWaypoint {
     
     weak var scene: UIViewController?
-    var window: UIWindow!
+    weak var window: UIWindow?
     
     public init() {
     }
     
     public func makeRoot() -> Bool {
-        guard scene != nil, window != nil, window.isKeyWindow else {
+        guard scene != nil, window != nil, window!.isKeyWindow else {
             return false
         }
         
-        window.rootViewController = scene
+        window!.rootViewController = scene
         scene = nil
         window = nil
         return true
@@ -43,4 +43,3 @@ public class WindowWaypointSource: WindowWaypoint, RootWaypoint {
         return self
     }
 }
-
