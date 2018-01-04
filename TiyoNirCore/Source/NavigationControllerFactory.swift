@@ -19,8 +19,8 @@ public extension UINavigationController {
     
     public class Factory: NavigationControllerFactory {
         
+        weak var root: UIViewController?
         var theme: NavigationControllerTheme
-        var root: UIViewController?
         
         public init() {
             self.theme = Theme()
