@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'TNCore'
-  s.version  = '0.2'
+  s.version  = '0.2.1'
   s.summary  = 'Core for Tiyo Nir architecture'
   s.platform = :ios, '11.0'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
